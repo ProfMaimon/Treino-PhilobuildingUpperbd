@@ -1376,70 +1376,53 @@
         padding: 10px;
     }
 
+    /* Ajuste do container para preencher melhor a tela */
     .container {
-        width: 100%;
-        max-width: 100%;
+        width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
         padding: 15px;
         box-sizing: border-box;
     }
 
+    /* Ajuste dos títulos */
     h1, h2 {
-        font-size: 22px; /* Reduzindo tamanho dos títulos para caber melhor */
+        font-size: 22px; /* Reduzindo tamanho dos títulos */
         text-align: center;
     }
 
+    /* Ajuste do texto */
     p {
-        font-size: 16px; /* Reduzindo tamanho do texto */
+        font-size: 16px;
+        line-height: 1.6;
         text-align: justify;
     }
 
+    /* Ajuste do botão da promoção */
     .promo-button {
         width: 90%;
+        max-width: 300px; /* Evita que fique muito largo */
         font-size: 14px;
         padding: 8px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 10px auto;
-    }
-
-    .whatsapp-button {
-        width: 50px;
-        height: 50px;
-        bottom: 15px;
-        right: 15px;
-    }
-}
-/* Ajuste do texto para preencher melhor a tela */
-@media (max-width: 768px) {
-    .container {
-        max-width: 90%; /* Aumenta a largura do texto */
-        margin: 0 auto; /* Mantém centralizado */
-        padding: 0 10px; /* Pequeno espaço nas laterais */
-    }
-
-    p {
-        font-size: 16px; /* Ajustando tamanho da fonte */
-        line-height: 1.6; /* Melhorando espaçamento entre linhas */
-        text-align: justify; /* Justificando para melhor visualização */
-        margin: 0 auto; /* Centralizando */
-    }
-}
-
-    }
-}
-/* Ajuste do botão da promoção no mobile */
-@media (max-width: 768px) {
-    .promo-button {
-        font-size: 14px; /* Reduzindo o tamanho da fonte */
-        padding: 5px 15px; /* Ajustando espaçamento interno */
-        width: auto; /* Deixando o botão mais compacto */
-        height: 40px; /* Reduzindo a altura */
+        height: 40px;
     }
 
     /* Opcional: Remover o timer no mobile */
     .promo-button span.timer {
-        display: none; /* Oculta o timer quando a tela for pequena */
+        display: none;
+    }
+
+    /* Ajuste do botão do WhatsApp */
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
     }
 }
 </style>
