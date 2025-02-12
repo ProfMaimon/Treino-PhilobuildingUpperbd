@@ -1412,13 +1412,20 @@
 }
 /* Ajuste do texto para preencher melhor a tela */
 @media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Aumenta a largura do texto */
+        margin: 0 auto; /* Mantém centralizado */
+        padding: 0 10px; /* Pequeno espaço nas laterais */
+    }
+
     p {
-        font-size: 16px; /* Reduzindo o tamanho para melhor leitura */
+        font-size: 16px; /* Ajustando tamanho da fonte */
         line-height: 1.6; /* Melhorando espaçamento entre linhas */
         text-align: justify; /* Justificando para melhor visualização */
-        max-width: 90vw; /* Limitando largura do texto */
         margin: 0 auto; /* Centralizando */
-        padding: 0 10px; /* Pequeno espaço nas laterais */
+    }
+}
+
     }
 }
 /* Ajuste do botão da promoção no mobile */
