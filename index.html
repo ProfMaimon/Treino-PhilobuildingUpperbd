@@ -1410,6 +1410,31 @@
         right: 15px;
     }
 }
+/* Ajuste do texto para preencher melhor a tela */
+@media (max-width: 768px) {
+    p {
+        font-size: 16px; /* Reduzindo o tamanho para melhor leitura */
+        line-height: 1.6; /* Melhorando espaçamento entre linhas */
+        text-align: justify; /* Justificando para melhor visualização */
+        max-width: 90vw; /* Limitando largura do texto */
+        margin: 0 auto; /* Centralizando */
+        padding: 0 10px; /* Pequeno espaço nas laterais */
+    }
+}
+/* Ajuste do botão da promoção no mobile */
+@media (max-width: 768px) {
+    .promo-button {
+        font-size: 14px; /* Reduzindo o tamanho da fonte */
+        padding: 5px 15px; /* Ajustando espaçamento interno */
+        width: auto; /* Deixando o botão mais compacto */
+        height: 40px; /* Reduzindo a altura */
+    }
+
+    /* Opcional: Remover o timer no mobile */
+    .promo-button span.timer {
+        display: none; /* Oculta o timer quando a tela for pequena */
+    }
+}
 </style>
 </body>
 </html>
