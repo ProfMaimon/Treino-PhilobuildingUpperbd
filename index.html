@@ -1372,57 +1372,86 @@
         height: 35px;
     }
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
+    /* Garantir que o conteúdo se ajuste automaticamente ao zoom */
+    html, body {
+        width: 100%;
+        overflow-x: hidden; /* Evita rolagem lateral */
     }
 
-    /* Ajuste do container para preencher melhor a tela */
+    /* Container responsivo e maleável */
     .container {
-        width: 90%;
-        max-width: 90%;
+        width: 95%;
+        max-width: 600px;
         margin: 0 auto;
         padding: 15px;
         box-sizing: border-box;
     }
 
     /* Ajuste dos títulos */
-    h1, h2 {
-        font-size: 22px; /* Reduzindo tamanho dos títulos */
+    h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        color: #FFC107; /* Dourado refinado */
+    }
+
+    h2 {
+        font-size: 18px;
+        opacity: 0.9;
         text-align: center;
     }
 
     /* Ajuste do texto */
     p {
         font-size: 16px;
-        line-height: 1.6;
-        text-align: justify;
+        line-height: 1.8;
+        text-align: left; /* Evita problemas com espaçamento */
+        margin-bottom: 15px;
     }
 
-    /* Ajuste do botão da promoção */
+    /* Melhorando a experiência do botão de promoção */
     .promo-button {
-        width: 90%;
-        max-width: 300px; /* Evita que fique muito largo */
-        font-size: 14px;
-        padding: 8px;
+        height: 35px;
+        width: 85%;
+        max-width: 280px;
+        border-radius: 6px;
+        background-color: #FFC107; /* Dourado refinado */
+        color: #000;
+        font-weight: bold;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 10px auto;
-        height: 40px;
+        bottom: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        animation: pulse 1.5s infinite;
     }
 
-    /* Opcional: Remover o timer no mobile */
+    /* Efeito pulsante para destacar a promoção */
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+
+    /* Remover timer no mobile */
     .promo-button span.timer {
         display: none;
     }
 
     /* Ajuste do botão do WhatsApp */
     .whatsapp-button {
-        width: 50px;
-        height: 50px;
         position: fixed;
-        bottom: 15px;
-        right: 15px;
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+
+    /* Ajuste do fundo para melhorar a estética */
+    body {
+        background: linear-gradient(to bottom, #111, #222);
     }
 }
 </style>
