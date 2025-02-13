@@ -1454,6 +1454,37 @@
         background: linear-gradient(to bottom, #111, #222);
     }
 }
+/* 🔹 Melhorando a experiência do layout com grid/flexbox */
+@media (min-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* 📏 Ajuste na tipografia para maior responsividade */
+h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+/* 📡 Melhorando a exibição e carregamento das imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+img[loading="lazy"] {
+    width: 600px;
+    height: 400px;
+}
+
+/* 🏎️ Otimizando o carregamento da fonte */
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('minhafonte.woff2') format('woff2');
+    font-display: swap;
+}
 </style>
 </body>
 </html>
