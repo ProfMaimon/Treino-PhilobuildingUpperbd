@@ -1491,9 +1491,14 @@ img[loading="lazy"] {
     -webkit-overflow-scrolling: touch; /* Suaviza rolagem em dispositivos móveis */
 }
 
+/* Permite rolagem horizontal para todas as tabelas */
 table {
+    display: block;
     width: 100%;
+    overflow-x: auto;
+    white-space: nowrap; /* Impede quebra de linha */
     border-collapse: collapse;
+    -webkit-overflow-scrolling: touch; /* Suaviza rolagem no mobile */
 }
 </style>
 </body>
