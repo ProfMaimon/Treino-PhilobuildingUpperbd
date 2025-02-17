@@ -17,7 +17,25 @@
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
-        
+        </style>
+</head>
+<body>
+    <script>
+        const senhaCorreta = "segreta123";
+        const senha = prompt("Digite a senha para acessar o conteúdo exclusivo:");
+        if (senha !== senhaCorreta) {
+            alert("Acesso negado.");
+            window.location.href = "pagina-publica.html";
+        }
+    </script>
+
+    <!-- Conteúdo visível somente se a senha estiver correta -->
+    <div class="container">
+        <h1>Bem-vindo à Página Exclusiva</h1>
+        <!-- Outros conteúdos -->
+    </div>
+</body>
+</html>
         /* Aplicando Animação ao Botão do WhatsApp */
         .whatsapp-button, .promo-button {
             animation: pulse 1.5s infinite;
@@ -1501,23 +1519,5 @@ table {
     -webkit-overflow-scrolling: touch; /* Suaviza rolagem no mobile */
 }
 </style>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Página Exclusiva Philobuilding</title>
-</head>
-<body>
-  <h1>Bem-vindo à Página Exclusiva</h1>
-  <script>
-    const senhaCorreta = "segreta123";
-    const senha = prompt("Digite a senha para acessar o conteúdo exclusivo:");
-    if (senha !== senhaCorreta) {
-      alert("Acesso negado.");
-      window.location.href = "pagina-publica.html";
-    }
-  </script>
-</body>
-</html>
 </body>
 </html>
