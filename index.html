@@ -1,73 +1,68 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhiloBuilding - O Método Definitivo</title>
-    <style>   /* Evita que o conteúdo fique muito largo na tela */
-    .container {
-        padding: 15px;
-        width: 95%;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhiloBuilding - O Método Definitivo</title>
+  <style>
+    /* Global Body Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(90deg, #121212, #1e1e1e);
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
     }
-}
-/* Efeito de Pulsação nos Botões */
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        </style>
-<head>
+    
+    /* Container Base */
+    .container {
+      /* Configurações iniciais (ajuste conforme necessário) */
+      padding: 15px;
+      width: 95%;
+      /* Estilo completo para o container */
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      margin-bottom: 50px;
+    }
+    
+    /* Efeito de Pulsação nos Botões */
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
+    /* Animação aplicada aos botões */
+    .whatsapp-button, 
+    .promo-button, 
+    .cta-button {
+      animation: pulse 1.5s infinite;
+    }
+    
+    /* Estilos para Cabeçalhos */
+    h1 {
+      font-size: 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #ffcc00;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
 <body>
-    <script>
-        const senhaCorreta = "segreta123";
-        const senha = prompt("Digite a senha para acessar o conteúdo exclusivo:");
-        if (senha !== senhaCorreta) {
-            alert("Acesso negado.");
-            window.location.href = "pagina-publica.html";
-        }
-    </script>
-
-    <!-- Conteúdo visível somente se a senha estiver correta -->
-    <div class="container">
-        <h1>Bem-vindo à Página Exclusiva</h1>
-        <!-- Outros conteúdos -->
-    </div>
-<style>
-        /* Aplicando Animação ao Botão do WhatsApp */
-        .whatsapp-button, .promo-button {
-            animation: pulse 1.5s infinite;
-        }
-        
-        /* Aplicando Animação aos Botões Principais */
-        .cta-button {
-            animation: pulse 1.5s infinite;
-        }
-        
-         {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(90deg, #121212, #1e1e1e);
-            color: #fff;
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 30px;
-            background: rgba(0, 0, 0, 0.85);
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-            margin-bottom: 50px;
-        }
-        h1 {
-            font-size: 40px;
-            text-transform: uppercase;
-            font-weight: bold;
-            color: #ffcc00;
-            letter-spacing: 2px;
-        }
+  <script>
+    const senhaCorreta = "segreta123";
+    const senha = prompt("Digite a senha para acessar o conteúdo exclusivo:");
+    if (senha !== senhaCorreta) {
+      alert("Acesso negado.");
+      window.location.href = "pagina-publica.html";
+    }
+  </script>
         h2 {
             font-size: 26px;
             color: #ffffff;
